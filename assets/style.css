@@ -1,0 +1,85 @@
+:root {
+  --background: #212121;
+  --background-2: #343434;
+  --foreground: #fff;
+  --accent: rgb(181, 139, 255);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&display=swap');
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: 'Inconsolata', monospace;
+  margin: 0;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: var(--background-2);
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.nav-texts a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.nav-texts a:hover {
+  color: var(--accent);
+}
+
+.nav-links a {
+  float: right;
+  text-align: center;
+  color: white;
+  font-size: 20px;
+  padding: 14px 8px;
+  display: block;
+}
+
+.nav-links a:hover {
+  color: var(--accent);
+}
+
+.navbar img {
+  float: left;
+  padding-left: 10px;
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.main {
+  color: var(--foreground);
+  font-size: 25px;
+  font-weight: 200;
+  padding: 10px;
+  text-align: center;
+  max-width: 1000px;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--foreground);
+  margin: 5px;
+}
+
+.header .title {
+  font-size: 50px;
+  font-weight: 600;
+  margin-top: 30px;
+  margin-bottom: -50px;
+}
