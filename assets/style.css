@@ -9,11 +9,10 @@ html {
   scroll-behavior: smooth;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&display=swap');
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: 'Inconsolata', monospace;
+  font-family: monospace;
   margin: 0;
 }
 
