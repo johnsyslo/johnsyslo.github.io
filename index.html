@@ -1,98 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Dwsysfx</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta charset="utf-8">
-    <link rel="icon" type="image/png" href="https://dwsysfx.ml/assets/images/favicon.png">
-    <link rel="stylesheet" href="/assets/style.css">
-    <script src="https://kit.fontawesome.com/ef30a67fe1.js" crossorigin="anonymous"></script>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link
+			rel="icon"
+			href="https://cdn.glitch.global/626641e2-85b9-4c7b-9de4-1c4d1e81074d/cloud.svg?v=1687442522229"
+		/>
+		<title>John Syslo</title>
 
-    <!-- Embed Things-->
-    <meta content="Dwsysfx" property="og:title" />
-    <meta content="Dwsysfx's site!" property="og:description" />
-    <meta content="https://dwsysfx.ml" property="og:url" />
-    <meta content="https://dwsysfx.ml/assets/images/cloud.png" property="og:image" />
-    <meta name="theme-color" content="#B58BFF" />
-  </head>
-    <div class="navbar">
-      <img alt="Image of a cloud that is the logo." href="#introduction" src="/assets/images/cloud.png">
-      
-      <div class="nav-texts">
-        <a href="#introduction">Introduction</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
-      </div>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap" rel="stylesheet" />
 
-      <div class="nav-links">
-        <a href="https://discordapp.com/users/1024889708624482354/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-discord"></i></a>
-        <a href="https://github.com/dwsysfx/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i></a>
-      </div>
-    </div>
+		<link rel="stylesheet" href="/style.css" />
+		<script src="https://kit.fontawesome.com/ef30a67fe1.js" crossorigin="anonymous"></script>
+		<script src="/script.js" defer></script>
+	</head>
+	<body onload="getDog()">
+		<div id="navbar">
+			<nav class="navbar">
+				<a href="/" class="nav-logo"><i class="fa-solid fa-cloud"></i></a>
+				<ul class="nav-menu">
+					<li class="nav-item">
+						<a href="#about" class="nav-link">About</a>
+					</li>
+					<li class="nav-item">
+						<a href="#projects" class="nav-link">Projects</a>
+					</li>
+					<li class="nav-item">
+						<a href="#contact" class="nav-link">Contact</a>
+					</li>
+				</ul>
+				<div class="hamburger">
+					<span class="bar"></span>
+					<span class="bar"></span>
+					<span class="bar"></span>
+				</div>
+			</nav>
+		</div>
 
-    <div class="body"> <!-- Body -->
-      <div class="header"> <!-- Header -->
+		<div class="content">
+			<div id="splash" class="splash">
+				<div class="text">
+					<h1 class="title">Hello<br />World</h1>
+					<p>Hi, I'm a <b>programmer</b> who builds<br />amazing websites in my free time!</p>
+				</div>
 
-        <!-- Introduction -->
-        <div id="introduction" class="title">
-          <p>Introduction</p>
-        </div>
-        <div class="main">
-          <p>Hi 👋, i'm Dwsysfx or JP </p>
-          <p>I code a lil, barely much, and anything I make I maintain for about a month.. if it ever gets finished. <br> <br>
-            Don't know much code, am working on learning more, partly the reason for this website so I can Google less.</p>
-        </div>
-        <br>
-       <!-- Projects -->
-        <div id="projects" class="title">
-          <p>Projects</p>
-        </div>
-        <div class="main">
-          <p>I've worked on a couple projects, mostly which ended due to not wanting to continue them or finish.</p>
-          <hr>
-        </div>
+				<img id="doggieImg" onclick="getDog()" />
+			</div>
 
-        <div class="box">
-          <!-- Project Img -->
-          <div class="logo">
-            <img alt="A pixel art island in the sky with a tree on it." src="assets/images/skyblockbot.png">
-          </div>
+			<div id="about" class="section">
+				<h2>About</h2>
+				<p>
+					👋 Hi, I'm John or JP! I code a little in my free time. None of my projects are really "finished" or
+					maintained.
+				</p>
+				<br />
+				<p>
+					My interest in computers began growing in the fourth grade when my school created a computer class.
+					That year the teacher created a computer club, I joined that year and have been tinkering with
+					computers ever since
+				</p>
+			</div>
 
-          <!-- Title  -->
-          <div class="title">
-            <p><b>SkyblockBot</b></p>
-          </div>
+			<div id="projects" class="section">
+				<h2>Projects</h2>
+				<p>Here you can find some of my projects. Most of them aren't finished nor maintained, enjoy!</p>
+			</div>
 
-          <!-- Description -->
-          <div class="main">
-            <p>SkyBlockBot was a Discord Bot I set out to create to learn Discord.js. It didn't really help since I used Google a bunch. It is now broken due to updates to DJS, in the future I would like to make a rewrite in TypeScript or Python.</p>
-            <a class="button github" href="https://github.com/dwsysfx/SkyblockBot/" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> View on GitHub</a>
-          </div>
-        </div>
+			<div class="box">
+				<div class="logo">
+					<img src="/assets/skyblockbot.png" />
+				</div>
 
-        <br>
+				<div class="title">
+					<p><b>SkyblockBot</b></p>
+				</div>
 
-        <div class="box">
-          <!-- Project Img -->
-          <div class="logo">
-            <img alt="Cloud" src="assets/images/cloud.png">
-          </div>
+				<div class="text">
+					<p>A simple Discord.js bot I created that links a Hypixel guild and a Discord server.</p>
+					<a
+						class="button github"
+						href="https://github.com/dwsysfx/SkyblockBot/"
+						target="_blank"
+						rel="noopener noreferrer"
+						><i class="fab fa-github"></i> View on GitHub</a
+					>
+				</div>
+			</div>
+		</div>
 
-          <!-- Title -->
-          <div class="title">
-            <p><b>Website</b></p>
-          </div>
-
-          <!-- Description -->
-          <div class="main">
-            <p>This website was created for me to work on different parts of HTML and CSS. Most times I've used Google, but now it's time for me to learn. Gonna be adding loads of stuff to this site hopefully.</p>
-            <a class="button github" href="https://github.com/dwsysfx/dwsysfx.github.io/" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> View on GitHub</a>
-          </div>
-
-        </div>
-
-      </div> <!-- Header -->
-    </div> <!-- Body -->
-
-  </body>
+		<footer class="footer">
+			<!-- Footer goes here! -->
+			<p>Made by JP</p>
+		</footer>
+	</body>
 </html>
