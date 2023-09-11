@@ -1,3 +1,3 @@
 # A random website.
-[The Website](https://dwsysfx.ml/)
+[Website](https://dwsysfx.github.io/)
 
