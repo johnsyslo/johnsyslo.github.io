@@ -1,0 +1,76 @@
+:root {
+    --color-primary: #A7C7E7;
+    --color-secondary: #fff;
+    --color-text: #1a1a1a;
+}
+
+.dark-mode {
+    --color-primary: #1a1a1a;
+    --color-secondary: #A7C7E7;
+    --color-text: #fff;
+}
+
+body {
+    font-family: "Sans-Serif";
+    background-color: var(--color-primary);
+    color: var(--color-text);
+}
+
+h1 {
+    font-family: "Outfit";
+}
+
+p {
+    padding: 20px 5%;
+}
+
+.container {
+    border-radius: 10px;
+    margin: 70px auto;
+    padding: 20px;
+
+    color: var(--color-text);
+    background-color: var(--color-secondary)
+}
+
+@media (min-width: 480px) {
+    .container {
+        max-width: 90%;
+    }
+}
+@media (min-width: 576px) {
+    .container {
+        max-width: 85%;
+    }
+}
+@media (min-width: 768px) {
+    .container {
+        max-width: 80%;
+    }
+}
+@media (min-width: 992px) {
+    .container {
+        max-width: 75%;
+    }
+}
+@media (min-width: 1200px) {
+    .container {
+        max-width: 60%;
+    }
+}
+@media (min-width: 1400px) {
+    .container {
+        max-width: 50%;
+    }
+}
+
+.toggle {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    padding: 10px;
+}
+
+#toggle {
+    cursor: pointer;
+}
