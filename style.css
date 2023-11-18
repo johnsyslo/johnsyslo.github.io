@@ -1,9 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
 
-.nav-item {
-    border: 1px solid red;
-}
-
 :root {
     --background: #e6f7fa;
     --primary: #1e8694;
