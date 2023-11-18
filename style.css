@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
 
+.nav-item {
+    border: 1px solid red;
+}
+
 :root {
     --background: #e6f7fa;
     --primary: #1e8694;
@@ -71,7 +75,6 @@ body {
 }
 
 a {
-	list-style: none;
     text-decoration: none;
 }
 
@@ -91,14 +94,11 @@ a {
 
 .nav-item {
     margin: 1rem;
-}
-
-.nav-item a {
     text-decoration: none;
     color: var(--secondary)
 }
 
-.nav-item a:hover {
+.nav-item:hover {
     color: var(--accent)
 }
 
@@ -107,12 +107,14 @@ a {
 }
 
 .line {
-	display: block;
 	width: 20px;
 	height: 1px;
-	margin: 5px auto;
+
 	-webkit-transition: all 0.3s ease-in-out;
 	transition: all 0.3s ease-in-out;
+
+    display: block;
+	margin: 5px 0;
 	background-color: var(--secondary);
 }
 
@@ -135,6 +137,7 @@ a {
         width: 0;
         height: 100%;
         
+        text-align: center;
         padding-top: 25%;
         background-color: var(--text);
         overflow-x: hidden;
@@ -146,11 +149,10 @@ a {
 	}
 
 	.nav-item, #toggle {
-        margin: 1.5rem 0;
-        text-align: center;
+        margin: 1.5rem 5rem;
         transition: 0.3s;
 
-        display: block;
+        display: inline-block;
         flex-direction: column;
 	}
 
@@ -163,15 +165,15 @@ a {
         display: none;
     }
 
-	#hamburger.active .bar:nth-child(2) {
+	#hamburger.active .line:nth-child(2) {
 		opacity: 0;
 	}
 
-	#hamburger.active .bar:nth-child(1) {
-		transform: translateY(6px) rotate(45deg);
+	#hamburger.active .line:nth-child(1) {
+		transform: translateY(6px) rotate(135deg);
 	}
 
-	#hamburger.active .bar:nth-child(3) {
-		transform: translateY(-6px) rotate(-45deg);
+	#hamburger.active .line:nth-child(3) {
+		transform: translateY(-6px) rotate(45deg);
 	}
 }

@@ -30,7 +30,7 @@ function mobileMenu() {
 
 function navActive(p) {
     page = p;
-    document.querySelectorAll('#navbar > #nav-menu > span').forEach(e => {
+    document.querySelectorAll('#navbar > #nav-menu > a').forEach(e => {
         e.style.borderBottom = ''
     })
     document.querySelector(`#nav-${page}`).style.borderBottom = "2px solid var(--primary)";
