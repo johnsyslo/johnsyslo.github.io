@@ -127,7 +127,7 @@ a {
 	#nav-menu {
         top: 0;
         left: 0;
-        position: absolute;
+        position: fixed;
         z-index: 1;
 
         width: 0;
