@@ -2,5 +2,5 @@
 [Website](https://dwsysfx.github.io/)
 
 todo:
-- fix mobile nav unlined
-- fix dark mode colours
+- [X] fix mobile nav underlined
+- [ ] fix dark mode colours
