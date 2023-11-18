@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+
+:root {
+    --background: #e6f7fa;
+    --primary: #1e8694;
+    --secondary: #2abccf;
+    --tertiary: #60BCCA;
+    --accent: #9bd6df;
+    --text: #071f22;
+}
+
+.dark-mode {
+    --background: #104650;
+    --primary: #3cc5d7;
+    --secondary: blue;
+    --accent: #93dfe9;
+    --text: #e6f7fa;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: var(--background);
+    font-family: "Poppins";
+}
+
+.bar {
+    display: flex;
+    justify-content: space-between;
+}
+
+#nav-name {
+    font-size: 9vw;
+    color: var(--secondary);
+}
+
+#nav-wave {
+    font-size: 9vw;
+    padding-right: 10px;
+}
+
+@media screen and (max-width: 1440px) {
+    #nav-name, #nav-wave {
+       font-size: 40px;
+    }
+}
+@media screen and (max-width: 768px) {
+    #nav-name, #nav-wave {
+       font-size: 30px;
+    }
+}
+
+#nav-wave:hover {
+    animation-name: wave-animation;
+    animation-duration: 1.0s;
+    transform-origin: 70% 70%;
+    display: inline-block;
+}
+  
+@keyframes wave-animation {
+    0% { transform: rotate( 0.0deg) }
+    20% { transform: rotate(14.0deg) } 
+    40% { transform: rotate(-8.0deg) }
+    60% { transform: rotate(14.0deg) }
+    80% { transform: rotate( 0.0deg) }
+    100% { transform: rotate( 0.0deg) }
+}
+
+a {
+	list-style: none;
+    text-decoration: none;
+}
+
+#navbar {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1rem 1.5rem;
+}
+
+#nav-menu {
+	justify-content: space-between;
+	align-items: center;
+    color: var(--secondary);
+    transition: 0.3s;
+}
+
+.nav-item {
+    margin: 1rem;
+}
+
+.nav-item a {
+    text-decoration: none;
+    color: var(--secondary)
+}
+
+.nav-item a:hover {
+    color: var(--accent)
+}
+
+#hamburger {
+	display: none;
+}
+
+.line {
+	display: block;
+	width: 20px;
+	height: 1px;
+	margin: 5px auto;
+	-webkit-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+	background-color: var(--secondary);
+}
+
+#toggle {
+    margin: 0 1rem;
+	color: var(--secondary);
+}
+
+#toggle:hover {
+	color: var(--accent);
+}
+
+@media only screen and (max-width: 768px) {
+	#nav-menu {
+        top: 0;
+        left: 0;
+        position: absolute;
+        z-index: 1;
+
+        width: 0;
+        height: 100%;
+        
+        padding-top: 25%;
+        background-color: var(--text);
+        overflow-x: hidden;
+        transition: 0.5s;
+	}
+
+	#nav-menu.active {
+		width: 250px;
+	}
+
+	.nav-item, #toggle {
+        margin: 1.5rem 0;
+        text-align: center;
+        transition: 0.3s;
+
+        display: block;
+        flex-direction: column;
+	}
+
+	#hamburger {
+		display: block;
+		cursor: pointer;
+	}
+
+    text {
+        display: none;
+    }
+
+	#hamburger.active .bar:nth-child(2) {
+		opacity: 0;
+	}
+
+	#hamburger.active .bar:nth-child(1) {
+		transform: translateY(6px) rotate(45deg);
+	}
+
+	#hamburger.active .bar:nth-child(3) {
+		transform: translateY(-6px) rotate(-45deg);
+	}
+}

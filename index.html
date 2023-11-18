@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>random things</title>
+
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <nav id="navbar">
+        <div id="splash" class="bar">
+            <span id="nav-wave">👋</span>
+            <h1 id="nav-name">John Syslo</h1>
+        </div>
+
+        <div id="nav-menu">
+            <span class="nav-item" id="nav-h" onclick="navActive('h')">
+                <a href="#home" class="nav-link">Home</a>
+            </span>
+            <text> / </text>
+            <span class="nav-item" id="nav-a" onclick="navActive('a')">
+                <a href="#about" class="nav-link">About</a>
+            </span>
+            <text> / </text>
+            <span class="nav-item" id="nav-p" onclick="navActive('p')">
+                <a href="#projects" class="nav-link">Projects</a>
+            </span>
+            <text> / </text>
+            <span class="nav-item" id="nav-c" onclick="navActive('c')">
+                <a href="#contact" class="nav-link">Contact</a>
+            </span>
+            <text> / </text>
+            <i class="nav-item fa-solid fa-moon" id="toggle"></i>
+        </div>
+        <div id="hamburger">
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+        </div>
+    </nav>
+
+    <main>
+        <p style="margin:5rem; font-size:70px; text-align:center; color:var(--text);">Coming soon!</p>
+    </main>
+    <script src="./script.js"></script>
+    <script src="https://kit.fontawesome.com/ef30a67fe1.js" crossorigin="anonymous"></script>
+</body>
+</html>
