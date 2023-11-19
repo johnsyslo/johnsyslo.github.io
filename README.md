@@ -1,5 +1,5 @@
 # A random website.. v2 coming!
-[Website](https://dwsysfx.github.io/)
+[Website](https://johnsyslo.github.io/)
 
 todo:
 - [X] fix mobile nav underlined
